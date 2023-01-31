@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -15,5 +17,8 @@ public class User {
     @Id
     private String id;
     private String name;
+    private String email;
+    private String passWord;
+    private LocalDateTime createDate;
 
 }
